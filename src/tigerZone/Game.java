@@ -2,7 +2,6 @@ package tigerZone;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import tigerZone.Tile;
 public class Game {
 
 	public static void updatePlaceable(ArrayList<ArrayCoord> placedPos, 
@@ -27,11 +26,11 @@ public class Game {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Tile starter = new Tile('j','l','j',
-								't','t','t',
-								'j','j','j',
-								1);
-		
+//		Tile starter = new Tile('j','l','j',
+//								't','t','t',
+//								'j','j','j',
+//								1);
+		Tile starter = new Tile( "jljtttjjj", 1 );
 		
 		Tile[][] board = new Tile[77][77];
 		board[36][36]=starter;

@@ -9,18 +9,21 @@ public class Tile {
 	
 	boolean shield;
 	
-	public Tile(char zero, char one, char two, char three, char four, 
-				char five, char six, char seven, char eight, int identifier) {
+	public Tile(String territories, int identifier) {
 		fields = new Subtile[9];
-		fields[0] = new Subtile(zero);
-		fields[1] = new Subtile(one);
-		fields[2] = new Subtile(two);
-		fields[3] = new Subtile(three);
-		fields[4] = new Subtile(four);
-		fields[5] = new Subtile(five);
-		fields[6] = new Subtile(six);
-		fields[7] = new Subtile(seven);
-		fields[8] = new Subtile(eight);
+		for(int i = 0; i < 9; i++){
+			fields[i] = new Subtile(territories.charAt(i));
+		}
+		
+//		fields[0] = new Subtile(zero);
+//		fields[1] = new Subtile(one);
+//		fields[2] = new Subtile(two);
+//		fields[3] = new Subtile(three);
+//		fields[4] = new Subtile(four);
+//		fields[5] = new Subtile(five);
+//		fields[6] = new Subtile(six);
+//		fields[7] = new Subtile(seven);
+//		fields[8] = new Subtile(eight);
 		id = identifier;
 	}
 	
